@@ -5,16 +5,37 @@
     width:100%;
     }
     
-    #birdhover {
+ 
+       
+#brandinghover {
     
-    position: absolute;
-    top:10%;
-    right:13%;
-    height: 30%;
-    width:30%
+        position: absolute;
+        top:10%;
+        right:36.5%;
+        height:40%;
+        width:38%;
+        }
+
+#birdhover {  
+ position: absolute;
+ top:10%;
+ right:13%;
+ height: 30%;
+ width:30%;
+ transition: position 2s, width 2s,top 2s,right 2s,transform 2s;
+ transition-timing-function: ease-in-out;
+}
+
+#brandinghover:hover + #birdhover {
+       position: fixed;
+       right: 5%;
+       top: -20%;    
+       
+       width: 5%;
+       transform: rotateZ(360deg)
+          
     }
-    
-    #brandinghover {
+#brandinghover {
     
     position: absolute;
     top:10%;
@@ -29,22 +50,51 @@
     
 }
 #navbar:hover  #mark{
-    background-color: orangered;
+    background-color: red;
     transform: rotate3d(-1,1,0,360deg);
 }
 
 
 #hamburger-menu {
-    position: fixed; top: 0; right: 0; bottom: 0; left: 0;z-index:1;
+    width:0;
+    position: fixed; top: 0; right: 0; bottom: 0;z-index:1;
     background-color: rebeccapurple;
-}
+    transition: width 0.5s;
+    }
 
 img.shake:hover {
     animation: shake 0.5s;
     animation-iteration-count: 1;
   }
-  
-  @keyframes shake {
+   
+
+a.nav-link{
+      font-size: 1.5rem;
+}
+a.nav-link:hover {
+        text-decoration: underline;
+  }
+
+
+a.container {
+      color: salmon;
+      font-size: 2.5rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  } 
+ a.container:hover {
+      text-decoration: underline;
+  }
+
+
+img.schedule {
+    width: 0;
+    position: relative;
+    left:-5rem;
+    top:0rem;
+    transition: width 1s;
+}
+
+@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -57,4 +107,6 @@ img.shake:hover {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+
 

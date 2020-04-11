@@ -6,7 +6,7 @@ import $ from 'jquery';
   styleUrls: ['./alumination.component.css']
 })
 export class AluminationComponent implements OnInit {
-  menuOpen=false;img0=false;img1=false;img2=false;
+ menuOpen=0;img0=0;img1=0;img2=0;
   
 
   
@@ -20,9 +20,54 @@ export class AluminationComponent implements OnInit {
 }
 
 onClickHamburger() {
-  this.menuOpen=true;
+  this.menuOpen=1;
+  document.getElementById("hamburger-menu").style.width="50%";
 }
 onClickClose() {
-  this.menuOpen=false;
+  this.menuOpen=0;
+  document.getElementById("hamburger-menu").style.width="0%";
 }
+
+bringImg0() {
+  if(this.img0==1)
+  {document.getElementById("img0").style.animation="shake 0.5s";
+   document.getElementById("img0").style.animationIterationCount="1"}
+
+
+  this.img0=1;this.img1=0;this.img2=0;
+
+  document.getElementById("img0").style.width="50rem";
+  document.getElementById("img1").style.width="0";
+  document.getElementById("img2").style.width="0";
+
+}
+
+bringImg1() {
+  if(this.img1==1)
+  {document.getElementById("img1").style.animation="shake 0.5s";
+   document.getElementById("img1").style.animationIterationCount="1"}
+
+
+  this.img0=0;this.img1=1;this.img2=0;
+
+  document.getElementById("img0").style.width="0";
+  document.getElementById("img1").style.width="50rem";
+  document.getElementById("img2").style.width="0";
+  
+}
+
+bringImg2() {
+  if(this.img2==1)
+  {document.getElementById("img2").style.animation="shake 0.5s";
+   document.getElementById("img2").style.animationIterationCount="1"}
+  
+  
+  this.img0=0;this.img1=0;this.img2=1;
+
+  document.getElementById("img0").style.width="0";
+  document.getElementById("img1").style.width="0";
+  document.getElementById("img2").style.width="50rem";
+
+}
+
 }
