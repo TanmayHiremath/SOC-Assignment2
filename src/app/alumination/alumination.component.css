@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 #backhover {
     position: relative;
     top: 0px;
@@ -27,12 +36,13 @@
 }
 
 #brandinghover:hover + #birdhover {
-       position: fixed;
+       position: absolute;
        right: 5%;
-       top: -20%;    
+       top: -15%;    
        
-       width: 5%;
-       transform: rotateZ(360deg)
+       width: 0%;
+       transform: rotateZ(360deg);
+       z-index: 1;
           
     }
 #brandinghover {
@@ -46,19 +56,22 @@
  
 #mark{
     width: 4rem;
-    transition: transform 4s;
+    transition: transform 2s;
     
 }
 #navbar:hover  #mark{
-    background-color: red;
+   
     transform: rotate3d(-1,1,0,360deg);
 }
 
+#hamburger-icon {
+    display: none;
+}
 
 #hamburger-menu {
     width:0;
     position: fixed; top: 0; right: 0; bottom: 0;z-index:1;
-    background-color: rebeccapurple;
+    
     transition: width 0.5s;
     }
 
@@ -66,33 +79,52 @@ img.shake:hover {
     animation: shake 0.5s;
     animation-iteration-count: 1;
   }
-   
+  
+.d-flex div :hover{
+    background-color: darkorange;
+    text-decoration: none;
 
-a.nav-link{
-      font-size: 1.5rem;
 }
-a.nav-link:hover {
-        text-decoration: underline;
-  }
 
+.d-flex a{
+    
+    color: black;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-a.container {
-      color: salmon;
-      font-size: 2.5rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-  } 
- a.container:hover {
-      text-decoration: underline;
-  }
+  
+#schedule {
+    font-size: 5rem;font-weight: bolder;position: relative;
+}
+#signstand{
+    height: 34rem;position: relative;left: 10%;padding:5%;
+}
+#board0 {
+    height: 4rem;position: relative;left:-1.5rem;top:-10rem;
+}
 
+#board1{
+    height: 4rem;position: relative;left:-12rem;top:-4rem;
+}
+
+#board2{
+    height: 4rem;position: relative;left:-18rem;top:3rem;
+}
 
 img.schedule {
     width: 0;
     position: relative;
-    left:-5rem;
-    top:0rem;
+    left:-15rem;
+    top:3rem;
     transition: width 1s;
 }
+.icon{
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    margin: 8px 0;
+  }
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -108,5 +140,40 @@ img.schedule {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
+
+  @media screen and (max-width:800px)
+  {
+    .hidden a{
+        visibility: hidden;
+    }
+    #mark {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+  
+    #schedule {
+        font-size: 2rem;
+    }
+ 
+    #signstand{
+      
+        width:10%;
+        padding: 0;
+    }
+    
+    #board0{
+        left: -5%;
+    }
+    
+    .schedule {
+        width: 50%;
+    }
+    
+
+
+  }
 
 
