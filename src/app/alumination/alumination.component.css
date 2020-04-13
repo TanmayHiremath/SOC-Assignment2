@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-  }
+}
   
   img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 
 #backhover {
@@ -15,7 +15,6 @@
     width:100vw;
     }
     
- 
        
 #brandinghover {
     
@@ -24,7 +23,7 @@
         right:36.5vw;
         
         width:38vw;
-        }
+ }
 
 #birdhover {  
  position: absolute;
@@ -38,14 +37,12 @@
 
 #brandinghover:hover + #birdhover {
        position: absolute;
-       right: 5%;
-       top: -15%;    
-       
+       right: 3vw;
+       top: 3vw;    
        width: 0%;
        transform: rotateZ(360deg);
        z-index: 1;
-          
-    }
+}
 
  
 #mark{
@@ -59,7 +56,11 @@
 }
 
 #hamburger-icon {
-    display: none;
+    display:none;
+}
+
+#close {
+    font-size: 3rem;
 }
 
 #hamburger-menu {
@@ -85,8 +86,7 @@
     font-size: 2.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-  
+ 
 #schedule {
     font-size: 5rem;font-weight: bolder;position: relative;
 }
@@ -150,9 +150,6 @@ img.schedule {
         display: block;
     }
     
-
-
-
   
     #schedule {
         font-size: 2rem;
