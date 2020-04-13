@@ -7,11 +7,12 @@
     height: auto;
   }
 
+
 #backhover {
     position: relative;
     top: 0px;
-    height : 100%;
-    width:100%;
+   height: 100%;
+    width:100vw;
     }
     
  
@@ -19,18 +20,18 @@
 #brandinghover {
     
         position: absolute;
-        top:10%;
-        right:36.5%;
-        height:40%;
-        width:38%;
+        
+        right:36.5vw;
+        
+        width:38vw;
         }
 
 #birdhover {  
  position: absolute;
- top:10%;
- right:13%;
- height: 30%;
- width:30%;
+ top:5vw;
+ right:18vw;
+ 
+ width:20vw;
  transition: position 2s, width 2s,top 2s,right 2s,transform 2s;
  transition-timing-function: ease-in-out;
 }
@@ -75,11 +76,6 @@
     transition: width 0.5s;
     }
 
-img.shake:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: 1;
-  }
-  
 .d-flex div :hover{
     background-color: darkorange;
     text-decoration: none;
@@ -97,26 +93,32 @@ img.shake:hover {
 #schedule {
     font-size: 5rem;font-weight: bolder;position: relative;
 }
+
+img.shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  
 #signstand{
-    height: 34rem;position: relative;left: 10%;padding:5%;
+    height: 40vw; position: relative;left: 10vw;padding:5vw;
 }
 #board0 {
-    height: 4rem;position: relative;left:-1.5rem;top:-10rem;
+    height: 4vw;position: absolute;left:15.5vw;top:8vw;
 }
 
 #board1{
-    height: 4rem;position: relative;left:-12rem;top:-4rem;
+    height: 4vw;position: absolute;left:15vw;top:15vw;
 }
 
 #board2{
-    height: 4rem;position: relative;left:-18rem;top:3rem;
+    height: 4vw;position: absolute;left:17vw;top:21vw;
 }
 
 img.schedule {
     width: 0;
     position: relative;
-    left:-15rem;
-    top:3rem;
+    left:-10vw;
+    top:5vw;
     transition: width 1s;
 }
 .icon{
@@ -157,22 +159,7 @@ img.schedule {
     #schedule {
         font-size: 2rem;
     }
- 
-    #signstand{
-      
-        width:10%;
-        padding: 0;
-    }
-    
-    #board0{
-        left: -5%;
-    }
-    
-    .schedule {
-        width: 50%;
-    }
-    
-
+   
 
   }
 

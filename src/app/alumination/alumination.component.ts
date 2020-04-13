@@ -38,7 +38,7 @@ bringImg0() {
 
   this.img0=1;this.img1=0;this.img2=0;
 
-  document.getElementById("img0").style.width="50rem";
+  document.getElementById("img0").style.width="50vw";
   document.getElementById("img1").style.width="0";
   document.getElementById("img2").style.width="0";
 
@@ -53,7 +53,7 @@ bringImg1() {
   this.img0=0;this.img1=1;this.img2=0;
 
   document.getElementById("img0").style.width="0";
-  document.getElementById("img1").style.width="50rem";
+  document.getElementById("img1").style.width="50vw";
   document.getElementById("img2").style.width="0";
 
 }
@@ -68,7 +68,7 @@ bringImg2() {
 
   document.getElementById("img0").style.width="0";
   document.getElementById("img1").style.width="0";
-  document.getElementById("img2").style.width="50rem";
+  document.getElementById("img2").style.width="50vw";
 
 }
 
