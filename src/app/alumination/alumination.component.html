@@ -1,5 +1,5 @@
 
- <body style="background-color:#130b2d;"> 
+
  <div> 
   <img id="backhover" src="assets/Images/backhover.svg" alt="Image couldn't load">
 
@@ -23,17 +23,16 @@
 </div>
   
 
-  
+ <div class="menu">
 <div id="hamburger-menu" class="d-flex flex-column bg-warning justify-content-between">
     <button *ngIf="menuOpen"  class="close float-right" (click)="onClickClose()">
       <div class="float-right">&times;</div>
       </button>   
-    
- 
    <div class=" flex-fill"><a class="p-3" href="">Home</a></div>
    <div class=" flex-fill"><a class="p-3" href="">About</a></div> 
    <div class=" flex-fill"><a class="p-3" href="">Contact Us</a></div>
 </div>
+</div> 
   
 <div style="background-color:#130b2d; color: white;">
   <div class="container">
@@ -53,4 +52,3 @@
 <img class="schedule" id="img2" src="assets/Images/scheduleDay2.png" alt="Image couldn't load">
 </div>
 </div>
-</body>

@@ -20,7 +20,7 @@
 #brandinghover {
     
         position: absolute;
-        
+        top: 10vw;
         right:36.5vw;
         
         width:38vw;
@@ -46,14 +46,7 @@
        z-index: 1;
           
     }
-#brandinghover {
-    
-    position: absolute;
-    top:10%;
-    right:36.5%;
-    height:40%;
-    width:38%;
-    }
+
  
 #mark{
     width: 4rem;
@@ -81,6 +74,10 @@
     text-decoration: none;
 
 }
+
+.d-flex div.icon:hover {
+    background-color: black;
+} 
 
 .d-flex a{
     
@@ -146,15 +143,16 @@ img.schedule {
   @media screen and (max-width:800px)
   {
     .hidden a{
-        visibility: hidden;
-    }
-    #mark {
         display: none;
     }
-
+    
     #hamburger-icon {
         display: block;
     }
+    
+
+
+
   
     #schedule {
         font-size: 2rem;
