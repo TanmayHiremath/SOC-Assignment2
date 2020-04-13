@@ -60,14 +60,16 @@
 }
 
 #close {
+    display: none;
     font-size: 3rem;
 }
 
 #hamburger-menu {
     width:0;
     position: fixed; top: 0; right: 0; bottom: 0;z-index:1;
-    
-    transition: width 0.5s;
+    background-image: linear-gradient(to right,lightblue,lightgreen);
+    transition: width 0.8s;
+    transition-timing-function: cubic-bezier(0.8, 0.8, 0.8, 0.1);
     }
 
 .d-flex div :hover{

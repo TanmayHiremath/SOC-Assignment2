@@ -18,18 +18,25 @@ export class AluminationComponent implements OnInit {
   
 
 }
+
 homeColor() {
   document.getElementById('home').classList.add('bg-primary');
 }
 onClickHamburger() {
+  document.getElementById("close").style.display="block"
   this.menuOpen=1;
   document.getElementById("hamburger-menu").style.width="100%";
 }
 onClickClose() {
+  
   this.menuOpen=0;
   document.getElementById("hamburger-menu").style.width="0%";
+  setTimeout(this.closeClose,800)
+  
 }
-
+closeClose() {
+  document.getElementById("close").style.display="none";
+}
 bringImg0() {
   if(this.img0==1)
   {document.getElementById("img0").style.animation="shake 0.5s";
